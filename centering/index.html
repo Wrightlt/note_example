@@ -1,0 +1,137 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <style>
+    .parent {
+      width: 200px;
+      height: 200px;
+      background: #ffb88b;
+    }
+
+    .son {
+      background: #ff8824;
+    }
+
+    /* first */
+    .son1 {
+      width: 100px;
+      height: 100px;
+      position: relative;
+      top: calc(50% - 50px);
+      left: calc(50% - 50px);
+    }
+
+    /*second*/
+    .parent2 {
+      position: relative;
+    }
+
+    .son2 {
+      width: 100px;
+      height: 100px;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      margin-left: -50px;
+      margin-top: -50px;
+    }
+
+
+    /*third*/
+    .parent3 {
+      position: relative;
+    }
+
+    .son3 {
+      width: 100px;
+      height: 100px;
+      position: absolute;
+      margin: auto;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+    }
+
+    /*fourth*/
+    .parent4 {
+      display: table-cell;
+      vertical-align: middle;
+    }
+
+    .son4 {
+      width: 100px;
+      height: 100px;
+      margin: auto;
+    }
+
+
+    /*fifth*/
+    .parent5 {
+      position: relative;
+    }
+
+    .son5 {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      -ms-transform: translate(-50%, -50%);
+      -moz-transform: translate(-50%, -50%);
+      -o-transform: translate(-50%, -50%);
+      transform: translate(-50%, -50%);
+    }
+
+
+    .son6 {
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      z-index: -1;
+    }
+  </style>
+</head>
+<body>
+1:
+<div class="parent">
+  <div class="son son1">test test test test </div>
+</div>
+<br><br>
+
+2:
+<div class="parent parent2">
+  <div class="son son2">test test test test </div>
+</div>
+<br><br>
+
+3:
+<div class="parent parent3">
+  <div class="son son3">test test test test </div>
+</div>
+<br><br>
+
+4:
+<div class="parent parent4">
+  <div class="son son4">test test test test </div>
+</div>
+<br><br>
+
+5:
+<div class="parent parent5">
+  <div class="son son5">test test test test </div>
+</div>
+<br><br>
+
+6：
+<div class="parent parent6">
+  <div class="son son6">test test test test </div>
+</div>
+<br><br>
+
+</body>
+</html>
